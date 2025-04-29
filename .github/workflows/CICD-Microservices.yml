@@ -46,4 +46,4 @@ jobs:
     steps:
       - name: Pull and Deploy Microservices
         run: |
-          kubectl rollout restart deployment ${{inputs.MICROSERVICE_NAME}} -n $NAMESPACE
+          kubectl rollout restart deployment ${{inputs.MICROSERVICE_NAME}} -n ${{inputs.NAMESPACE}}
